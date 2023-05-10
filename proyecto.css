@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+/* Estilos para la cabecera */
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.titulo-principal {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.navegacion-principal ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion-principal li {
+    margin-right: 1rem;
+}
+
+.navegacion-principal a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.buscador {
+    display: flex;
+}
+
+.buscador input[type="text"] {
+    margin-right: 0.5rem;
+}
+
+.acceso {
+    color: #fff;
+    margin-left: 0.5rem;
+}
+
+/* Estilos para el modo oscuro */
+.modo-oscuro body {
+    color: #fff;
+    background-color: #222;
+}
+
+.modo-oscuro .cabecera {
+    background-color: #fff;
+    color: #000;
+}
+
+.modo-oscuro .navegacion-principal a {
+    color: #000;
+}
+
+.modo-oscuro .acceso {
+    color: #000;
+}
+
+/* Estilos para la página de proyecto */
+.proyecto {
+    margin: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.proyecto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+}
+
+footer {
+    text-align: center;
+    padding: 0.001rem;
+    background-color: #222;
+    color: #fff;
+}

@@ -1,0 +1,198 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+  }
+  
+  /* Estilos para la cabecera */
+  .cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .titulo-principal {
+    margin: 0;
+    margin-top: 5px;
+  }
+  
+  .navegacion-principal ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navegacion-principal li {
+    margin-right: 1rem;
+  }
+  
+  .navegacion-principal a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .buscador {
+    display: flex;
+  }
+  
+  .buscador input[type="text"] {
+    margin-right: 0.5rem;
+  }
+  
+  .acceso a {
+    color: #fff;
+    margin-left: 0.5rem;
+  }
+  
+  /* Estilos para el modo oscuro */
+  .modo-oscuro body {
+    color: #fff;
+    background-color: #222;
+  }
+  
+  .modo-oscuro .cabecera {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .modo-oscuro .navegacion-principal a {
+    color: #000;
+  }
+  
+  .modo-oscuro .acceso a {
+    color: #000;
+  }
+  
+  /* Estilos para la página principal */
+  .pagina-principal {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .imagen-fondo {
+    position: absolute;
+    top: -35%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('qrcode.png');
+    background-size: cover;
+    opacity: 5;
+    z-index: -1;
+    margin: auto; /* Agregar esta línea */
+  }
+  
+  .contenedor-texto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* texto principal de la WEB */
+  .texto-principal {
+    text-align: center;
+    margin-top: 495px;
+    /*Desplazamiento del texto pricipal*/
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  /* Estilos para el logo */
+  .logo {
+    background-image: url('Logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    /* ajustar al tamaño del logo */
+    width: 50px;
+    /* ajustar al tamaño del logo */
+  }
+  
+  /* Estilos para el contenedor principal */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Estilos para el contenedor del contenido principal */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    margin: auto;
+    max-width: 1200px;
+    padding: 50px;
+    margin-left: 0px;
+  }
+  
+  /* Estilos para el formulario de contacto */
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input[type="text"], 
+  .contact-form input[type="email"], 
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  

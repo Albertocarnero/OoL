@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orphans of Liberty</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Acceso.css" />
+  </head>
+  <body class="modo-claro">
+    <header class="cabecera">
+      <img src="Logo.png" alt="Logo de Orphans of Liberty" class="logo">
+      <h1 class="titulo-principal">Orphans of Liberty</h1>
+      <nav class="navegacion-principal">
+        <ul>
+          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="sugerencias.html">Sugerencias</a></li>
+          <li><a href="donaciones.html">Donaciones</a></li>
+        </ul>
+      </nav>
+      <div class="cabecera-derecha">
+        <form class="buscador">
+          <input type="text" placeholder="Buscar...">
+          <button type="submit">Buscar</button>
+        </form>
+        <div class="acceso">
+          <a href="registrarse.html">Registrarse</a>
+          <a href="Acceso.html">Acceder</a>
+        </div>
+      </div>
+      <button id="modo-oscuro">Modo oscuro</button>
+    </header>
+    <main>
+      <div class="pagina-principal">
+        <div class="imagen-fondo"></div>
+        <div class="contenedor-texto">
+          <div class="texto-principal">
+            <h2>Orphans of Liberty</h2>
+            <p>Orphans of Liberty es un proyecto que tiene como objetivo promover el uso de las comunidades energéticas, una nueva forma de producir y consumir energía de manera sostenible y colaborativa.</p>
+          </div>
+        </div>
+      </div>
+      <form class="formulario" action="procesar_login.php" method="POST">
+        <div class="grupo-formulario">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="grupo-formulario">
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Iniciar sesión</button>
+        <footer>
+            <p>Derechos de autor © 2023 Orphans of Liberty</p>
+          </footer>
+          <script>
+            // Código para dar visibilidad a la descripción
+            const descripcion = document.querySelector('.texto-principal p');
+            descripcion.style.display = 'block';
+          </script>
+          
+          <script src="js.js"></script>
+        </body>
+      </html>
+      
+       

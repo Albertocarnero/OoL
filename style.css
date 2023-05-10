@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+/* Estilos para la cabecera */
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.titulo-principal {
+  margin: 0;
+  margin-top: 5px;
+}
+
+.navegacion-principal ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion-principal li {
+  margin-right: 1rem;
+}
+
+.navegacion-principal a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.buscador {
+  display: flex;
+}
+
+.buscador input[type="text"] {
+  margin-right: 0.5rem;
+}
+
+.acceso a {
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+/* Estilos para el modo oscuro */
+.modo-oscuro body {
+  color: #fff;
+  background-color: #222;
+}
+
+.modo-oscuro .cabecera {
+  background-color: #fff;
+  color: #000;
+}
+
+.modo-oscuro .navegacion-principal a {
+  color: #000;
+}
+
+.modo-oscuro .acceso a {
+  color: #000;
+}
+
+/* Estilos para la página principal */
+.pagina-principal {
+  position: relative;
+  height: 100vh;
+}
+
+.imagen-fondo {
+  position: absolute;
+  top: -35%; /* Desplazamiento de la imagen de fondo */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('imagen.fondo.png');
+  background-size: cover;
+  opacity: 5;
+  z-index: -1;
+}
+
+.contenedor-texto {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.texto-principal {
+  text-align: center;
+  margin-top: 550px; /*Desplazamiento del texto pricipal*/
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Estilos para el logo */
+.logo {
+  background-image: url('Logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px; /* ajustar al tamaño del logo */
+  width: 50px; /* ajustar al tamaño del logo */
+}
