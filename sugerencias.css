@@ -77,11 +77,10 @@ body {
 .imagen-fondo {
     position: absolute;
     top: -35%;
-    /* Desplazamiento de la imagen de fondo */
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('D:\\web\\imagen.fondo.png');
+    background-image: url('imagen.fondo.png');
     background-size: cover;
     opacity: 5;
     z-index: -1;
@@ -95,11 +94,14 @@ body {
     height: 100%;
 }
 
-.texto-principal {
-    text-align: center;
-    margin-top: 550px;
-    /*Desplazamiento del texto pricipal*/
-}
+
+    .texto-principal {
+        text-align: center;
+        margin-top: 495px;
+        margin-left: auto; /* Agrega esta línea */
+        margin-right: auto; /* Ajusta el valor según sea necesario */
+    }
+
 
 /* Estilos para el pie de página */
 footer {
@@ -115,215 +117,105 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     height: 50px;
-    /* ajustar al tamaño del logo */
     width: 50px;
-    /* ajustar al tamaño del logo */
 }
 
-/* Estilos para el formulario de sugerencias */
-.sugerencias-formulario {
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.texto-principal h2 {
+    text-align: center; /* Alinea el título a la izquierda */
+    margin-left: 35%;
+}
+
+.texto-principal p {
+    text-align: left; /* Alinea el párrafo a la izquierda */
+    margin-left: 35%;
+    justify-content: center;
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    justify-content: center;
+    height: 50vh;
+    margin-left: -400%; /* Ajusta el valor según sea necesario */
+    margin-top: -80%; /* Ajustar margen desde la cabecera */
 }
 
-.sugerencias-formulario label {
+.formulario-contacto label,
+.formulario-contacto input,
+.formulario-contacto textarea {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.formulario-contacto label {
     font-weight: bold;
-    margin-bottom: 0.5rem;
 }
 
-.sugerencias-formulario input[type="text"],
-.sugerencias-formulario input[type="email"],
-.sugerencias-formulario textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ccc;
-}
-
-.sugerencias-formulario input[type="submit"] {
-    background-color: #007acc;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.sugerencias-formulario input[type="submit"]:hover {
-    background-color: #005b8a;
-}
-
-.sugerencias-formulario input[type="submit"]:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #007acc;
-}
-
-.sugerencias-formulario textarea {
-    height: 8rem;
-}
-
-#email {
-    width: 100%;
-    margin-left: auto;
-    /* Agregado para desplazar a la derecha */
-    margin-right: 200px;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ccc;
-    width: 75%;
-}
-
-#mensaje {
-    width: 100%;
-    margin-left: auto;
-    /* Agregado para desplazar a la derecha */
-    margin-right: 300px;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ccc;
-    width: 75%;
-}
-
-#nombre {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+.formulario-contacto input,
+.formulario-contacto textarea {
     padding: 10px;
-    width: 50%;
-    margin-right: 250px;
-
-}
-
-.enviar {
-    margin-left: 20px;
-    /* Cambia el valor de 20px por el que desees para ajustar el desplazamiento */
-}
-
-/* Estilos para el formulario de sugerencias */
-.formulario-sugerencias {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.formulario-sugerencias label {
-    display: flex;
-    flex-direction: column;
-    margin-right: 1rem;
-}
-
-.formulario-sugerencias input[type="text"],
-.formulario-sugerencias input[type="email"],
-.formulario-sugerencias textarea {
-    padding: 0.5rem;
-    border-radius: 0.25rem;
     border: 1px solid #ccc;
-    margin-bottom: 0.5rem;
-    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
-.formulario-sugerencias input[type="submit"] {
-    background-color: #007acc;
+.formulario-contacto textarea {
+    height: 150px;
+}
+
+.formulario-contacto button {
+    background-color: #000;
     color: #fff;
+    padding: 10px 20px;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.formulario-sugerencias input[type="submit"]:hover {
-    background-color: #005c99;
+.formulario-contacto button:hover {
+    background-color: #222;
 }
 
-/* Estilos para el formulario en dispositivos móviles */
-@media only screen and (max-width: 768px) {
-    .formulario-sugerencias {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .formulario-sugerencias label {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-        width: 100%;
-    }
+/* Estilos para la sección de mapa */
+.mapa {
+    height: 400px;
+    background-color: #222;
 }
 
-.sugerencias-formulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.sugerencias-formulario label,
-.sugerencias-formulario input[type="text"],
-.sugerencias-formulario textarea,
-.sugerencias-formulario input[type="submit"] {
-    margin: 0.5rem;
-}
-
-.sugerencias-formulario label[for="nombre"],
-.sugerencias-formulario input[type="text"][id="nombre"] {
+/* Estilos para la sección de datos de contacto en el pie de página */
+.datos-contacto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    color: #fff;
+    padding: 0.05rem;
     text-align: left;
 }
 
-.sugerencias-formulario label[for="email"] {
+footer {
     text-align: center;
-}
-
-.sugerencias-formulario label[for="mensaje"],
-.sugerencias-formulario textarea[id="mensaje"] {
-    width: 100%;
-}
-
-.sugerencias-formulario input[type="submit"] {
-    width: auto;
-    margin-top: 1rem;
-    float: right;
-    margin-right: 100%;
-}
-
-.sugerencias-formulario label {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.sugerencias-formulario input[type="text"],
-.sugerencias-formulario input[type="email"],
-.sugerencias-formulario textarea {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    /* añade un margen derecho de 1rem */
-}
-
-.sugerencias-formulario input[type="submit"] {
-    background-color: #007acc;
+    padding: 0.001rem;
+    background-color: #222;
     color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Añade un contenedor para centrar el formulario horizontalmente */
-.sugerencias-contenedor {
-    display: flex;
-    justify-content: center;
 }

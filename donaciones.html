@@ -27,20 +27,39 @@
         <p>Agradecemos tu interés en apoyar nuestra causa. Tu donación nos permite continuar con nuestro trabajo.</p>
         
         <form class="formulario-donaciones">
-          <div class="grupo-formulario">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-          </div>
-          <div class="grupo-formulario">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="grupo-formulario">
-            <label for="cantidad">Cantidad a donar:</label>
-            <input type="number" id="cantidad" name="cantidad" required>
-          </div>
-          <div class="grupo-formulario">
-            <button type="submit">Donar</button>
+          <form class="formulario" action="procesar_login.php" method="POST">
+            <div class="grupo-formulario">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="grupo-formulario">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Iniciar sesión</button>
+          </form>
+          
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label> Nombre: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Enviar</button>
+            </p>
+          </form>
+          
           <div>
             <img src="qrcode.png" alt="imagen-fondo">
           </div>
